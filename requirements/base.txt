@@ -3,8 +3,7 @@ setuptools
 wheel
 # ~= 3.7.0  ⇔  >=3.7.0, ==3.7.*
 # Also 3.6 und alle Sicherheitspatches.
-Django<2.2
-django-cms~=3.6.0
+django-cms~=3.7.0
 django-filer
 djangocms-text-ckeditor
 djangocms-link
@@ -14,7 +13,6 @@ djangocms-video
 djangocms-googlemap
 djangocms-snippet
 djangocms-style
-djangocms-column
 django-fsmedhro-core
 django-crispy-forms
 djangocms-bootstrap4

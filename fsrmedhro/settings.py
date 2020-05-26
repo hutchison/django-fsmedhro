@@ -63,7 +63,6 @@ INSTALLED_APPS = [
     'djangocms_googlemap',
     'djangocms_snippet',
     'djangocms_style',
-    'djangocms_column',
     # für schöne Formulare:
     'crispy_forms',
     # alles für Bootstrap 4
