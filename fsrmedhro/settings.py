@@ -116,6 +116,8 @@ MIDDLEWARE = [
     'cms.middleware.utils.ApphookReloadMiddleware',
 ]
 
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
 INTERNAL_IPS = []
 
 if DEBUG:
