@@ -1,15 +1,13 @@
 {% load menu_tags %}
 {% load i18n menu_tags cache mptt_tags %}
 {% for child in children %}
-<!-- dropdown  submenu  start -->
-    <li {% if child.children %}class="dropdown-submenu"{% else %} {% endif %}>
-        <a tabindex="-1" href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">{{ child.get_menu_title }}</a>
-        {% if child.children %}
-            <ul class="dropdown-menu bg-dark" >
-                {% show_menu from_level to_level extra_inactive extra_active "dropdownmenu.html" "" "" child %}
-            </ul>
-        {% endif %}
-
-    </li>
-    <!-- dropdown  submenu  end -->
+	<li {% if child.children %}class="dropdown-submenu"{% else %} {% endif %}>
+	<a tabindex="-1" href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">{{ child.get_menu_title }}
+	</a>
+	{% if child.children %}
+		<ul class="dropdown-menu bg-dark" >
+			{% show_menu from_level to_level extra_inactive extra_active "dropdownmenu.html" "" "" child %}
+		</ul>
+	{% endif %}
+</li>
 {% endfor %}
