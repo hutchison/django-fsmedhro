@@ -4,6 +4,7 @@ wheel
 # ~= 3.7.0  ⇔  >=3.7.0, ==3.7.*
 # Also 3.6 und alle Sicherheitspatches.
 django-cms~=3.7.0
+django~=3.0.0
 django-filer
 djangocms-text-ckeditor
 djangocms-link
