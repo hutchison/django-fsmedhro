@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+from django.utils.translation import gettext_lazy as _
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -263,3 +264,55 @@ THUMBNAIL_PROCESSORS = (
 )
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# Django CMS Bootstrap 4 Options:
+
+DJANGOCMS_BOOTSTRAP4_TAG_CHOICES = [
+    'div', 'section', 'article', 'header', 'footer', 'aside'
+]
+
+DJANGOCMS_BOOTSTRAP4_CAROUSEL_TEMPLATES = (
+    ('default', _('Default')),
+)
+
+DJANGOCMS_BOOTSTRAP4_GRID_SIZE = 12
+DJANGOCMS_BOOTSTRAP4_GRID_CONTAINERS = (
+    ('container', _('Container')),
+    ('container-fluid', _('Fluid container')),
+)
+DJANGOCMS_BOOTSTRAP4_GRID_COLUMN_CHOICES = (
+    ('col', _('Column')),
+    ('w-100', _('Break')),
+    ('', _('Empty'))
+)
+
+DJANGOCMS_BOOTSTRAP4_USE_ICONS = True
+
+DJANGOCMS_BOOTSTRAP4_TAB_TEMPLATES = (
+    ('default', _('Default')),
+)
+
+DJANGOCMS_BOOTSTRAP4_SPACER_SIZES = (
+    ('0', '* 0'),
+    ('1', '* .25'),
+    ('2', '* .5'),
+    ('3', '* 1'),
+    ('4', '* 1.5'),
+    ('5', '* 3'),
+)
+
+DJANGOCMS_BOOTSTRAP4_CAROUSEL_ASPECT_RATIOS = (
+    (16, 9),
+)
+
+DJANGOCMS_BOOTSTRAP4_COLOR_STYLE_CHOICES = (
+    ('primary', _('Primary')),
+    ('secondary', _('Secondary')),
+    ('success', _('Success')),
+    ('danger', _('Danger')),
+    ('warning', _('Warning')),
+    ('info', _('Info')),
+    ('light', _('Light')),
+    ('dark', _('Dark')),
+    ('custom', _('Custom')),
+)
