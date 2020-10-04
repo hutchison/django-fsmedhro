@@ -97,7 +97,7 @@ AUTHENTICATION_BACKENDS = [
     'fsmedhro_core.backends.auth.LDAPUniRostock',
 ]
 
-FSRMED_AUTH_EXCEPTIONS = ['md261']
+FSRMED_AUTH_EXCEPTIONS = ['md261', 'ss1834']
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
