@@ -1,0 +1,19 @@
+{% load menu_tags %}
+
+{% for child in children %}
+<li class="nav-item">
+  <a href="{{ child.attr.redirect_url|default:child.get_absolute_url }}" class="nav-link" style="padding-right: 0;">
+    {{ child.get_menu_title }}
+  </a>
+</li>
+{% if child.children %}
+<li class="nav-item dropdown">
+  <a style="padding-left: 0;" class="nav-link dropdown-toggle" id="{{ child.id }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&thinsp;</a>
+  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="{{ child.id }}">
+  {% for grandchild in child.children %}
+  <a href="{{ grandchild.attr.redirect_url|default:grandchild.get_absolute_url }}" class="dropdown-item">{{ grandchild.get_menu_title }}</a>
+  {% endfor %}
+  </div>
+</li>
+{% endif %}
+{% endfor %}

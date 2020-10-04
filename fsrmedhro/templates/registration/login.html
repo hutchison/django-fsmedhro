@@ -54,33 +54,35 @@
 {% endblock stylesheets %}
 
 {% block content %}
-<div class="text-center">
+<div class="container text-center">
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-4">
+      <form method="post" action="{% url 'login' %}" class="form-signin">
+        {% csrf_token %}
 
-<form method="post" action="{% url 'login' %}" class="form-signin">
-  {% csrf_token %}
+        <h3 class="mb-3 font-weight-normal">Login</h3>
 
-  <h3 class="mb-3 font-weight-normal">Login</h3>
+        <p>Benutze dein Uni-Kürzel für den Login.</p>
 
-  <p>Benutze dein Uni-Kürzel für den Login.</p>
+        <label for="inputUsername" class="sr-only">Uni-Kürzel</label>
+        <input type="text" id="inputUsername" name="username" class="form-control" placeholder="Uni-Kürzel" required autofocus>
 
-  <label for="inputUsername" class="sr-only">Uni-Kürzel</label>
-  <input type="text" id="inputUsername" name="username" class="form-control" placeholder="Uni-Kürzel" required autofocus>
+        <label for="inputPassword" class="sr-only">Passwort</label>
+        <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Passwort" required>
 
-  <label for="inputPassword" class="sr-only">Passwort</label>
-  <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Passwort" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Einloggen</button>
 
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Einloggen</button>
+        <input type="hidden" name="next" value="{{ next }}" />
 
-  <input type="hidden" name="next" value="{{ next }}" />
-
-  {% if messages %}
-  <div class="mt-3">
-    {% for message in messages %}
-    <div class="alert alert-danger" role="alert">{{ message|safe }}</div>
-    {% endfor %}
-  {% endif %}
+        {% if messages %}
+        <div class="mt-3">
+          {% for message in messages %}
+          <div class="alert alert-danger" role="alert">{{ message|safe }}</div>
+          {% endfor %}
+          {% endif %}
+        </div>
+      </form>
+    </div>
   </div>
-</form>
-
 </div>
 {% endblock %}
