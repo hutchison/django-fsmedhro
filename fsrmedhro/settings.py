@@ -67,7 +67,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     # alles für Bootstrap 4
     #
-    # benötigt:
+    # benötigt (schon eingebunden):
     # 'djangocms_icon',
     # 'djangocms_link',
     # 'djangocms_picture',
