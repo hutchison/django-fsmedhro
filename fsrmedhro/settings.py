@@ -252,6 +252,13 @@ CMS_TEMPLATES = [
     ('base.html', 'Standardvorlage'),
 ]
 
+# Page permissions mode (CMS_PERMISSION = True): as well as standard Django
+# permissions, django CMS provides row-level permissions on pages, allowing you
+# to control the access of users to different sections of a site, and sites
+# within a multi-site project.
+
+CMS_PERMISSION = True
+
 # Easy Thumbnail and Django filer configuration:
 
 THUMBNAIL_HIGH_RESOLUTION = True
