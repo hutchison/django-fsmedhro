@@ -17,3 +17,4 @@ djangocms-style
 django-fsmedhro-core
 django-crispy-forms
 djangocms-bootstrap4
+django-exoral
