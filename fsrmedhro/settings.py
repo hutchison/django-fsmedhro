@@ -89,6 +89,7 @@ INSTALLED_APPS = [
     'djangocms_bootstrap4.contrib.bootstrap4_utilities',
     # Unsere eigenen Apps:
     'fsmedhro_core.apps.FachschaftConfig',
+    'exoral',
 ]
 
 SITE_ID = 1
