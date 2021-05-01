@@ -1,6 +1,8 @@
 # vim: set nospell:
+pip
 setuptools
 wheel
+
 # ~= 3.x.0  ⇔  >=3.x.0, ==3.x.*
 # Also 3.8 und alle Sicherheitspatches.
 django-cms~=3.8.0
