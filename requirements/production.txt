@@ -1,0 +1,6 @@
+-r base.txt
+
+# Diese Projekte werden bei der Entwicklung lokal als Symlink eingebunden und
+# müssen nicht installiert werden:
+django-exoral
+django-fsmedhro-core
