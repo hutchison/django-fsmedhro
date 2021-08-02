@@ -2,3 +2,4 @@
 django-debug-toolbar
 django-extensions
 Werkzeug
+ldap3>=2.6
