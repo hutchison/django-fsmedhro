@@ -1,19 +1,18 @@
 {% load menu_tags %}
 
 {% for child in children %}
-<li class="nav-item">
-  <a href="{{ child.attr.redirect_url|default:child.get_absolute_url }}" class="nav-link" style="padding-right: 0;">
+<li class="nav-item {% if child.children %}dropdown{% endif %}">
+  <a id="{{ child.id }}" href="{{ child.attr.redirect_url|default:child.get_absolute_url }}"
+    class="nav-link {% if child.children %}dropdown-toggle{% endif %}" style="padding-right: 0;"
+    {% if child.children %} role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"{% endif %}>
     {{ child.get_menu_title }}
   </a>
-</li>
-{% if child.children %}
-<li class="nav-item dropdown">
-  <a style="padding-left: 0;" class="nav-link dropdown-toggle" id="{{ child.id }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&thinsp;</a>
+  {% if child.children %}
   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="{{ child.id }}">
-  {% for grandchild in child.children %}
-  <a href="{{ grandchild.attr.redirect_url|default:grandchild.get_absolute_url }}" class="dropdown-item">{{ grandchild.get_menu_title }}</a>
-  {% endfor %}
+    {% for grandchild in child.children %}
+    <a href="{{ grandchild.attr.redirect_url|default:grandchild.get_absolute_url }}" class="dropdown-item">{{ grandchild.get_menu_title }}</a>
+    {% endfor %}
   </div>
+  {% endif %}
 </li>
-{% endif %}
 {% endfor %}
