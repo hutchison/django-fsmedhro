@@ -20,3 +20,5 @@ django-crispy-forms
 djangocms-bootstrap4
 django-sekizai
 django-polymorphic>=3.0
+# django-treebeard macht bei 4.5.x Probleme
+django-treebeard==4.4
