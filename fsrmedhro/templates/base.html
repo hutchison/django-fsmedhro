@@ -31,6 +31,9 @@
           <a class="nav-link dropdown-toggle" href="#" id="user_menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ user.username }}</a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="user_menu">
             <a class="dropdown-item" href="{% url 'fsmedhro_core:detail' %}">Profil</a>
+            {% if user.is_staff %}
+            <a class="dropdown-item" href="{% url 'fsmedhro_core:rundmail' %}">Rundmail</a>
+            {% endif %}
             <a class="dropdown-item" href="{% url 'logout' %}">Logout</a>
           </div>
         </li>
