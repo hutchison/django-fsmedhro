@@ -194,6 +194,14 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+# E-Mail
+# Use
+# python -m smtpd -n -c DebuggingServer localhost:1025
+# as a SMTP daemon for development
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025
+
+
 # Logging
 
 LOGGING = {
