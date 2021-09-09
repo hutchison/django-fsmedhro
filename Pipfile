@@ -1,0 +1,31 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django-cms = "~=3.8.0"
+django-filer = "*"
+djangocms-text-ckeditor = "*"
+djangocms-link = "*"
+djangocms-file = "*"
+djangocms-picture = "*"
+djangocms-video = "*"
+djangocms-googlemap = "*"
+djangocms-snippet = "*"
+djangocms-style = "*"
+django-crispy-forms = "*"
+djangocms-bootstrap4 = "*"
+django-sekizai = "*"
+django-polymorphic = ">=3.0"
+django-treebeard = "==4.4"
+Django = "~=3.1.0"
+ldap3 = ">=2.6"
+
+[dev-packages]
+django-debug-toolbar = "*"
+django-extensions = "*"
+Werkzeug = "*"
+
+[requires]
+python_version = "3.9"
