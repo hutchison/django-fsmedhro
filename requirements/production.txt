@@ -4,3 +4,4 @@
 # müssen nicht installiert werden:
 django-exoral
 django-fsmedhro-core
+django-fsmedhro-diva

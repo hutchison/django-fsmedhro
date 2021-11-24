@@ -90,6 +90,7 @@ INSTALLED_APPS = [
     # Unsere eigenen Apps:
     'fsmedhro_core.apps.FachschaftConfig',
     'exoral',
+    'fsmedhro_diva',
 ]
 
 SITE_ID = 1

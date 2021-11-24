@@ -26,6 +26,7 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('app:fachschaft/', include('fsmedhro_core.urls', namespace='fsmedhro_core')),
     path('app:exoral/', include('exoral.urls', namespace='exoral')),
+    path('app:diva/', include('fsmedhro_diva.urls', namespace='fsmedhro_diva')),
     path('', include('cms.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
