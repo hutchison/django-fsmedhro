@@ -5,8 +5,8 @@ wheel
 
 # ~= 3.x.0  ⇔  >=3.x.0, ==3.x.*
 # Also 3.8 und alle Sicherheitspatches.
-django-cms~=3.8.0
-django~=3.1.0
+django-cms~=3.9.0
+django~=3.2.0
 django-filer
 djangocms-text-ckeditor
 djangocms-link
@@ -21,4 +21,4 @@ djangocms-bootstrap4
 django-sekizai
 django-polymorphic>=3.0
 # django-treebeard macht bei 4.5.x Probleme
-django-treebeard==4.4
+django-treebeard
