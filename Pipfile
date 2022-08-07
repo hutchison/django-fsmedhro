@@ -26,6 +26,7 @@ ldap3 = ">=2.6"
 django-debug-toolbar = "*"
 django-extensions = "*"
 Werkzeug = "*"
+ipython = "*"
 
 [requires]
 python_version = "3.9"
