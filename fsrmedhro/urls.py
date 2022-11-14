@@ -27,6 +27,7 @@ urlpatterns = [
     path('app:fachschaft/', include('fsmedhro_core.urls', namespace='fsmedhro_core')),
     path('app:exoral/', include('exoral.urls', namespace='exoral')),
     path('app:diva/', include('fsmedhro_diva.urls', namespace='fsmedhro_diva')),
+    path('app:ausleihe/', include('ausleihe.urls', namespace='ausleihe')),
     path('', include('cms.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

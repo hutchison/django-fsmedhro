@@ -92,6 +92,7 @@ INSTALLED_APPS = [
     'fsmedhro_core.apps.FachschaftConfig',
     'exoral',
     'fsmedhro_diva',
+    'ausleihe',
 ]
 
 SITE_ID = 1

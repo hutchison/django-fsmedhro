@@ -5,3 +5,4 @@
 django-exoral
 django-fsmedhro-core
 django-fsmedhro-diva
+django-ausleihe
