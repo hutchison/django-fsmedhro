@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "c447175aae0f144f7c605f3e93706634a568f460649d42bc7f073d1e650409ee"
+            "sha256": "0f0b21f1942aa9b63cd698556129d222824e01a6c42c99884a07d27007656f99"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -23,6 +23,14 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==3.7.2"
+        },
+        "crispy-bootstrap4": {
+            "hashes": [
+                "sha256:5241ab1dc2188c95560aa786439bcbedec7416e6b0f5a52dded82380810367ec",
+                "sha256:f18386c4d96180c1bb1212487d6e8f5a3dd1a9bb58d3032183973d4d130b55f9"
+            ],
+            "index": "pypi",
+            "version": "==2022.1"
         },
         "cssselect2": {
             "hashes": [
@@ -198,7 +206,9 @@
             "version": "==3.0.0"
         },
         "easy-thumbnails": {
-            "extras": [],
+            "extras": [
+                "svg"
+            ],
             "hashes": [
                 "sha256:7e4e912609fc9b60b3a1fef6557ec15ddf9c4f946267a92e6920dfd4dd765e35",
                 "sha256:97f5a5278d8b6c1f5b1b7473f3737d29b18f5c1159cbdf0ab28674fdac2f8c87"

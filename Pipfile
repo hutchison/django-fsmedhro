@@ -21,6 +21,7 @@ django-polymorphic = ">=3.0"
 django-treebeard = "==4.4"
 Django = "~=3.2.0"
 ldap3 = ">=2.6"
+crispy-bootstrap4 = "*"
 
 [dev-packages]
 django-debug-toolbar = "*"
