@@ -67,6 +67,7 @@ INSTALLED_APPS = [
     'djangocms_style',
     # für schöne Formulare:
     'crispy_forms',
+    'crispy_bootstrap4',
     # alles für Bootstrap 4
     #
     # benötigt (schon eingebunden):
