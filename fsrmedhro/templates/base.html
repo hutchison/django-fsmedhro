@@ -10,6 +10,12 @@
 
     {% render_block "css" %}
     {% block css %}{% endblock css %}
+
+    <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    {% render_block "js" %}
+    {% block js %}{% endblock %}
+
     <title>{% block title %}Fachschaft Medizin Rostock{% endblock %}</title>
   </head>
 
@@ -51,10 +57,5 @@
       {% placeholder "content" %}
     {% endblock %}
     </main>
-
-    <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-    {% render_block "js" %}
-    {% block js %}{% endblock %}
   </body>
 </html>
