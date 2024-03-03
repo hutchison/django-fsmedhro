@@ -89,6 +89,8 @@ INSTALLED_APPS = [
     'djangocms_bootstrap4.contrib.bootstrap4_picture',
     'djangocms_bootstrap4.contrib.bootstrap4_tabs',
     'djangocms_bootstrap4.contrib.bootstrap4_utilities',
+    # Django Rest Framework
+    'rest_framework',
     # Unsere eigenen Apps:
     'fsmedhro_core.apps.FachschaftConfig',
     'exoral',
@@ -254,6 +256,14 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+# Django Rest Framework configuration:
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissions',
+    ]
+}
 
 # Django CMS configuration:
 
