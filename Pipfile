@@ -26,6 +26,7 @@ djangorestframework = "*"
 django-mptt = "*"
 six = "*"
 packaging = "*"
+setuptools = "*"
 
 [dev-packages]
 django-debug-toolbar = "*"
