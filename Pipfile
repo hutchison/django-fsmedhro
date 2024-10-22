@@ -27,6 +27,7 @@ django-mptt = "*"
 six = "*"
 packaging = "*"
 setuptools = "*"
+requests = "*"
 
 [dev-packages]
 django-debug-toolbar = "*"
