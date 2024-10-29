@@ -60,6 +60,7 @@
 
     <main role="main" class="container-fluid">
     {% cms_toolbar %}
+    {% block app_extra_content %}{% endblock %}
     {% block content %}
       {% placeholder "content" %}
     {% endblock %}

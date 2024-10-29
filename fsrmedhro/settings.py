@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    # Constance für dynamische übergreifende Einstellungen:
+    'constance',
     # Django CMS und wichtige dazugehörige Apps:
     'cms',
     'menus',
@@ -162,6 +164,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'sekizai.context_processors.sekizai',
                 'cms.context_processors.cms_settings',
+                'constance.context_processors.config',
             ],
         },
     },
@@ -295,6 +298,28 @@ THUMBNAIL_PROCESSORS = (
 )
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# constance
+CONSTANCE_BACKEND = "constance.backends.database.DatabaseBackend"
+CONSTANCE_SUPERUSER_ONLY = False
+CONSTANCE_CONFIG = {
+        "AUSLEIHE_DISCLAIMER": (
+            "",
+            "Falls hier ein Text gespeichert ist, dann wird er auf allen Seiten der "
+            "Mediathek/Ausleihe oben angezeigt.\n"
+            "Kann z.B. für 'das Skillslab befindet sich aktuell im Aufbau' verwendet "
+            "werden.\n"
+            "Richtiges HTML ist möglich, also probiere gerne folgendes aus:\n"
+            """
+            <div class="alert alert-warning" role="alert">
+                A simple warning alert—check it out!
+            </div>\n
+            """
+            "Schau bei https://getbootstrap.com/ vorbei, "
+            f"aktuell nutzen wir {CRISPY_TEMPLATE_PACK}."
+        ),
+}
+
 
 # Django CMS Bootstrap 4 Options:
 

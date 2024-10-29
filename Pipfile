@@ -28,6 +28,7 @@ six = "*"
 packaging = "*"
 setuptools = "*"
 requests = "*"
+django-constance = "*"
 
 [dev-packages]
 django-debug-toolbar = "*"
