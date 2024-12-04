@@ -29,6 +29,7 @@ packaging = "*"
 setuptools = "*"
 requests = "*"
 django-constance = "*"
+qrcode = "*"
 
 [dev-packages]
 django-debug-toolbar = "*"
@@ -36,5 +37,6 @@ django-extensions = "*"
 Werkzeug = "*"
 ipython = "*"
 crispy-bootstrap4 = "*"
+pyopenssl = "*"
 
 [requires]
