@@ -30,6 +30,7 @@ setuptools = "*"
 requests = "*"
 django-constance = "*"
 qrcode = "*"
+markdown = "*"
 
 [dev-packages]
 django-debug-toolbar = "*"
